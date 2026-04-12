@@ -7,7 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/karyawan', [KaryawanController::class, 'index']); //READ
-Route::post('/karyawan', [KaryawanController::class, 'store']); //CREATE
-Route::put('/karyawan/{id}', [KaryawanController::class, 'update']); //UPDATE
-Route::delete('/karyawan/{id}', [KaryawanController::class, 'destroy']); //DELETE
+
+Route::get('/karyawan', [KaryawanController::class, 'index'])->name('karyawan.index');
+Route::post('/karyawan', [KaryawanController::class, 'store'])->name('karyawan.store');
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah'])->name('karyawan.tambah');
+Route::put('/karyawan/{id}', [KaryawanController::class, 'update'])->name('karyawan.update');
+Route::get('/karyawan/{id}', [KaryawanController::class, 'edit'])->name('karyawan.edit');
+Route::delete('/karyawan/{id}', [KaryawanController::class, 'destroy'])->name('karyawan.delete');
