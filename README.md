@@ -1,6 +1,6 @@
-# Belajar ORM — Manajemen Karyawan & Proyek
+# Belajar ORM - Manajemen Karyawan & Proyek
 
-Aplikasi web sederhana yang dibangun menggunakan Laravel sebagai tugas praktikum mata kuliah pemrograman web, dengan fokus pada materi Laravel Eloquent ORM.
+Aplikasi web sederhana yang dibangun menggunakan Laravel dengan fokus pada materi Laravel Eloquent ORM.
 
 ---
 
